@@ -29,7 +29,7 @@ CREATE TABLE `kayttaja` (
   `osasto` varchar(128) DEFAULT NULL,
   `tehtavanimike` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -59,7 +59,7 @@ CREATE TABLE `tunnit` (
   PRIMARY KEY (`id`),
   KEY `tunnit_kayttaja_id_fk` (`kayttajaId`),
   CONSTRAINT `tunnit_kayttaja_id_fk` FOREIGN KEY (`kayttajaId`) REFERENCES `kayttaja` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
